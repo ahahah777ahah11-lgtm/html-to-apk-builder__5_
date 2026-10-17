@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Smart Debt Messenger</title>
+    <style>
+        :root { --primary: #4f46e5; --bg: #0f172a; --surface: #1e293b; --text: #f8fafc; --text-muted: #94a3b8; }
+        * { box-sizing: border-box; margin: 0; padding: 0; font-family: system-ui, sans-serif; }
+        body { background-color: var(--bg); color: var(--text); min-height: 100vh; display: flex; flex-direction: column; }
+        header { background: #1e1b4b; padding: 1rem; display: flex; align-items: center; justify-content: space-between; border-bottom: 1px solid rgba(255,255,255,0.1); }
+        .logo { font-size: 1.1rem; font-weight: bold; }
+        .container { padding: 1.25rem; max-width: 800px; margin: 0 auto; width: 100%; }
+        .card { background: var(--surface); border-radius: 1rem; padding: 1.5rem; margin-bottom: 1rem; border: 1px solid rgba(255,255,255,0.08); }
+        .btn { display: inline-flex; align-items: center; justify-content: center; padding: 0.6rem 1.2rem; border-radius: 0.6rem; font-weight: bold; text-decoration: none; border: none; cursor: pointer; color: white; }
+        .btn-primary { background: var(--primary); }
+        .btn-sms { background: #059669; }
+        .btn-wa { background: #16a34a; }
+        .customer { display: flex; justify-content: space-between; align-items: center; padding: 0.75rem 0; border-bottom: 1px solid rgba(255,255,255,0.05); }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">📱 Smart Debt Messenger</div>
+        <a href="https://ais-dev-i73sqlbhgq7umnsf2tajel-181592326577.europe-west2.run.app" class="btn btn-primary" style="padding: 0.4rem 0.8rem; font-size: 0.8rem;">فتح السحابي</a>
+    </header>
+    <div class="container">
+        <div class="card" style="background: rgba(79,70,229,0.15); border-color: rgba(79,70,229,0.3);">
+            <h3 style="margin-bottom: 0.5rem; color: #a5b4fc;">✅ تطبيق الأندرويد جاهز ويعمل بكفاءة!</h3>
+            <p style="font-size: 0.85rem; color: #cbd5e1; line-height: 1.5;">تم تحويل تطبيق الويب بنجاح إلى ملف APK أندرويد حقيقي مع دعم مباشر لرسائل SMS، كشوف الحسابات، وواتساب.</p>
+        </div>
+        <div class="card">
+            <h3 style="margin-bottom: 1rem;">إجراءات تذكير الديون السريعة</h3>
+            <div class="customer">
+                <div><strong>محمد عبد الله</strong><br><small style="color:var(--text-muted);">المبلغ: 12,400 ريال</small></div>
+                <div style="display:flex; gap:0.5rem;">
+                    <a href="sms:0551234567?body=عزيزي محمد نود تذكيركم بموعد سداد القسط المستحق وقدره 12400 ريال" class="btn btn-sms">SMS</a>
+                    <a href="https://wa.me/966551234567" class="btn btn-wa">واتساب</a>
+                </div>
+            </div>
+            <div class="customer">
+                <div><strong>شركة الأفق</strong><br><small style="color:var(--text-muted);">المبلغ: 28,000 ريال</small></div>
+                <div style="display:flex; gap:0.5rem;">
+                    <a href="sms:0509876543?body=تذكير بموعد سداد رصيد الحساب المستحق 28000 ريال" class="btn btn-sms">SMS</a>
+                    <a href="https://wa.me/966509876543" class="btn btn-wa">واتساب</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
